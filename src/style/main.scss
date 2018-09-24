@@ -1,0 +1,19 @@
+/*
+* Custom variables and fonts
+*/
+@import "partials/variables";
+@import  "partials/font";
+@import  "partials/global";
+
+/*
+* Third Party
+*/
+@import "../../../node_modules/normalize.css/normalize.css";
+
+/*
+* Custom style
+*/
+@import "partials/header";
+@import "partials/main-page";
+
+

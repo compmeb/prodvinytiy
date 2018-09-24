@@ -1,0 +1,14 @@
+@import "mixin/font-face";
+
+/* @include font($font-family, $name, $weight, $style ) пример директивы.
+$font-family: -имя шрифта которое будет использоваться в верстке.
+$name: -имя файла шрифта.
+$weight: -жирность шрифта( normal, bold).
+$style: -стиль шрифта(normal, italik).
+ */
+
+@include font($font-family: 'PT Sans Narrow', $name:'pt_sans-narrow-web-regular-webfont' ,$weight: normal, $style: normal);
+
+@include font($font-family: 'PT Sans Narrow', $name:'pt_sans-narrow-web-bold-webfont' ,$weight: bold, $style: normal);
+
+
