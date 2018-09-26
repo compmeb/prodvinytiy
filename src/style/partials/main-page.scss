@@ -174,10 +174,27 @@ text-align: right;
 }
 .stats__header{
   width: 240px;
-  min-height: 263px;
+  display: block;
+  &::before{
+    top: 22px;
+  }
+}
+.stats__slogan{
+  width: auto;
+  margin-bottom: 42px;
 }
 .stats__list{
   width: 640px;
+  display: flex;
+}
+.stats__intro{
+  width: auto;
+  margin-bottom: 32px;
+  padding-right: 30px;
+
+}
+.stats__legend--top{
+  width: auto;
 }
 
 }
