@@ -9,9 +9,14 @@ CVS
 .*.swp
 .DS_Store
 ._*
-npm-debug.log
+npm-debug.*
 .npmrc
 node_modules
 config.gypi
 *.orig
 package-lock.json
+*.log
+*.ai
+*.pdf
+*.psd
+Thumbs.db
