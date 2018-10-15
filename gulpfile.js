@@ -60,7 +60,8 @@ var config = {
     ui: false,
     host: 'localhost',
     port: 9000,
-    logPrefix: "Frontend_Dnsoft"
+    logPrefix: "Frontend_Dnsoft",
+    browser:"chrome"
 };
 
 /* Notify config
@@ -201,7 +202,9 @@ gulp.task("watch", function() {
         gulp.start("html:build");
     });
     watch([path.watch.css], function(event, cb) {
+        setTimeout(function(){
         gulp.start("css:build");
+        },1000);
     });
     watch([path.watch.js], function(event, cb) {
         gulp.start("js:build");
