@@ -55,7 +55,6 @@
   box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255 ,0.3);
 }
 .main-nav--opened .main-nav__toggle {
-  position: absolute;
   top: 0;
   right: auto;
   left: 0;
@@ -159,7 +158,7 @@
   .main-nav--closed .user-list__item {
     display: none;
   }
-}
+
 .main-nav--opened  .main-nav__wrapper {
   position: absolute;
   top: 0;
@@ -181,7 +180,7 @@
   width: 7px;
   height: 100%;
 
-  box-shadow: inset 2px 0 7px -2px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 4px 0 7px -2px rgba(0, 0, 0, 0.4);
 }
 .main-nav--nojs .main-nav__toggle {
   display: none;
@@ -205,6 +204,7 @@
 
   background-color: #6a4d38;
 }
+  }
 
 @media(min-width: $tablet-width) {
   .page-header {
@@ -216,9 +216,10 @@
     height: 400px;
 
     background-color: #000000;
-    background-image: url(#);
+    background-image: url("../img/desktop/back-desktop.jpg");
     background-repeat: no-repeat;
     background-position: center -9px;
+
 
     img {
       display: block;
@@ -317,11 +318,16 @@
     left: 12px;
   }
 }
+@media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .page-header__logo {
+    background-image: url("../img/desktop/back-desktop@2x.jpg");
+    background-size: 1338px auto;
+  }
+}
 @media(min-width: $desktop-width) {
   .page-header__logo {
     height: 648px;
 
-    background: rgba( 255, 255, 255, 0.5);
     background-position: center 0;
     background-size: cover;
 
@@ -403,3 +409,13 @@
     left: 15px;
   }
 }
+  .user-list__login-icon {
+    left: 15px;
+  }
+  @media (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+    .page-header__logo {
+      background-image: url("../img/desktop/back-desktop@2x.jpg");
+      background-size: 1338px auto;
+    }
+  }
+
