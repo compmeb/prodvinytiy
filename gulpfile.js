@@ -181,6 +181,7 @@ gulp.task("css:build", function () {
       .pipe(sourcemaps.write('.'))
       .pipe(gulp.dest(path.build.css))
       .pipe(webserver.reload({stream: true}));
+      
 });
 
 gulp.task("js:build", function () {
@@ -214,7 +215,9 @@ gulp.task("watch", function() {
       gulp.start("html:build");
   });
   watch([path.watch.css], function(event, cb) {
+    setTimeout(function(){
       gulp.start("css:build");
+    },1000);
   });
   watch([path.watch.js], function(event, cb) {
       gulp.start("js:build");
@@ -227,21 +230,21 @@ gulp.task("watch", function() {
   });
 });
 
-gulp.task('build', function (cb) {
+gulp.task('build', function () {
   run(
-      "clean",
       "html:build",
       "css:build",
       "js:build",
       "fonts:build",
-      "image:build"
-  , cb);
+      "image:build" 
+  );
 });
 
-gulp.task("default", function (cb) {
+gulp.task("default", function () {
    run(
+      "clean",
        "build",
        "webserver",
        "watch"
-   , cb);
+    );
 });
