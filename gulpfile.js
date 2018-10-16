@@ -2,7 +2,7 @@
 
 var gulp = require("gulp"),
     autoprefixer = require("gulp-autoprefixer"),
-    cssbeautify = require("gulp-cssbeautify"),
+    cssbeautify = require("gulp-csscomb"),
     removeComments = require('gulp-strip-css-comments'),
     rename = require("gulp-rename"),
     sass = require("gulp-sass"),
@@ -114,7 +114,7 @@ gulp.task("css:final", function () {
       .pipe(removeComments())
       .pipe(cssbeautify())
       .pipe(gulp.dest(path.build.css))
-      .pipe(cssnano())
+      .pipe(cssnano({compatibility: 'ie11'}))
       .pipe(rename({suffix:'.min', prefix: ''}))
       .pipe(gulp.dest(path.build.css))
 });
@@ -170,18 +170,18 @@ gulp.task("css:build", function () {
       .pipe(sourcemaps.init())
       .pipe(sass())
       .pipe(autoprefixer({
-          browsers: ["last 5 versions"],
+          browsers: ["last 2 versions"],
           cascade: true
       }))
       // .pipe(removeComments())
-      // .pipe(cssbeautify())
+      .pipe(cssbeautify())
       // .pipe(gulp.dest(path.build.css))
       // .pipe(cssnano())
       // .pipe(rename({suffix:'.min', prefix: ''}))
       .pipe(sourcemaps.write('.'))
       .pipe(gulp.dest(path.build.css))
       .pipe(webserver.reload({stream: true}));
-      
+
 });
 
 gulp.task("js:build", function () {
@@ -230,21 +230,23 @@ gulp.task("watch", function() {
   });
 });
 
-gulp.task('build', function () {
+gulp.task('build', function (cb) {
   run(
       "html:build",
       "css:build",
       "js:build",
       "fonts:build",
-      "image:build" 
+      "image:build",
+      cb
   );
 });
 
-gulp.task("default", function () {
+gulp.task("default", function (cb) {
    run(
       "clean",
        "build",
        "webserver",
-       "watch"
+       "watch",
+       cb
     );
 });
