@@ -115,6 +115,9 @@ gulp.task("watch", function() {
   watch([path.watch.img], function(event, cb) {
       gulp.start("image:build");
   });
+  watch([path.watch.img], function(event, cb) {
+    gulp.start("sprite:build");
+});
   watch([path.watch.fonts], function(event, cb) {
       gulp.start("fonts:build");
   });
