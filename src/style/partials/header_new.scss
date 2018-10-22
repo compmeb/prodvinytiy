@@ -3,27 +3,29 @@
   flex-direction: column;
 }
 .page-header__logo{
-  min-height: 85px;
-  text-align: center;
-  img{
-    width: 226px;
-    height: 30px;
-  }
+width: 226px;
+height: 30px;
+padding-top: 29px;
+padding-bottom: 26px;
+padding-left: 50px;
+padding-right: 50px;
 }
 .main-nav{
-  min-height: 50px;
-  position: relative;
-  margin: 0 auto;
+text-align: center;
+position: relative;
+}
+.main-nav--closed{
+  height: 50px;
   background-color: #826550;
+  padding: 0;
+  margin: 0;
 }
 .main-nav__toggle{
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 50px;
-  width: 70px;
-  background-color: #6a4d38;
-  border: none;
-}
-.menu__button{
+position: absolute;
+top: 0;
+right: 0;
+width: 70px;
+height: 50px;
+background-color: #6a4d38;
+border: none;
 }
