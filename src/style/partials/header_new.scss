@@ -1,0 +1,29 @@
+.page-header{
+  display: flex;
+  flex-direction: column;
+}
+.page-header__logo{
+  min-height: 85px;
+  text-align: center;
+  img{
+    width: 226px;
+    height: 30px;
+  }
+}
+.main-nav{
+  min-height: 50px;
+  position: relative;
+  margin: 0 auto;
+  background-color: #826550;
+}
+.main-nav__toggle{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 70px;
+  background-color: #6a4d38;
+  border: none;
+}
+.menu__button{
+}
