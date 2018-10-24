@@ -6,13 +6,12 @@
 }
 .page-header__logo {
   min-width: 226px;
+  min-width: 30px;
   margin: 0 auto;
   padding-top: 29px;
   padding-right: 50px;
   padding-bottom: 26px;
   padding-left: 50px;
-
-  min-width: 30px;
 }
 .main-nav {
   position: relative;
@@ -20,12 +19,11 @@
   text-align: center;
 }
 .main-nav--closed {
+  min-width: 50px;
   margin: 0;
   padding: 0;
 
   background-color: #826550;
-
-  min-width: 50px;
   .button__cross {
     display: none;
   }
@@ -45,6 +43,7 @@
 .main-nav__toggle {
   min-width: 70px;
   min-height: 50px;
+  padding: 0;
 
   background-color: #6a4d38;
   border: none;
@@ -75,4 +74,39 @@
   left: -70px;
 
   border: none;
+}
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+.site-list {
+  a {
+    display: block;
+    padding: 12px 21px;
+    padding-bottom: 13px;
+
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    background-color: #826550;
+    border-top: 1px solid #71543f;
+    border-bottom: 1px solid #71543f;
+  }
+}
+.main-nav--closed .site-list__item{
+  display: none;
+  &--active{
+    display: block;
+  }
+}
+.main-nav--closed .user-list__item{
+  display: none;
 }
