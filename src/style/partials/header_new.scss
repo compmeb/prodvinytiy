@@ -37,6 +37,9 @@
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
+    &:active{
+      opacity: 0.4;
+    }
   }
   .button__cross {
     display: none;
@@ -96,6 +99,10 @@
     background-color: #826550;
     border-top: 1px solid #71543f;
     border-bottom: 1px solid #71543f;
+    &:active{
+      opacity: 0.4;
+    }
+
   }
 }
 .main-nav--opened .user-list {
@@ -117,6 +124,10 @@
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
+    &:active{
+      opacity: 0.4;
+    }
+
   }
 }
 .main-nav--opened .user-list__icon {
@@ -128,12 +139,6 @@
 
   fill: #ffffff;
 }
-
-.main-nav--nojs .main-nav__toggle {
-  display: none;
-}
-
-
 .main-nav__toggle {
   min-width: 70px;
   min-height: 50px;
@@ -166,3 +171,18 @@
 .user-list__item {
   margin-left: 42px;
 }
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+ .main-nav--nojs .site-list__item , .main-nav--nojs .user-list__item{
+  display: block;
+  margin-left: 10px;
+  a{
+    text-align: left;
+
+  }
+}
+.main-nav--nojs .user-list__icon{
+display: none;
+}
+
