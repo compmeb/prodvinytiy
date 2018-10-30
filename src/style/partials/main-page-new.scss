@@ -1,0 +1,33 @@
+.stats{
+  min-width: 320px;
+  margin: 0 auto;
+
+}
+.stats__header{
+  padding: 30px 0;
+  background-color: #ffffff;
+color: #000000;
+}
+.stats__legend--top{
+  display: none;
+}
+.stats__slogan{
+  display: block;
+  font-size: 27px;
+  line-height: 32px;
+  margin-bottom: 30px;
+padding: 0 40px;
+text-align: center;
+text-transform: uppercase;
+font-weight: bold;
+
+}
+.stats__intro{
+  display: block;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 0 20px;
+  text-align: center;
+  margin: 0;
+
+}

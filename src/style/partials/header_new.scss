@@ -37,7 +37,7 @@
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
-    &:active{
+    &:active {
       opacity: 0.4;
     }
   }
@@ -99,10 +99,9 @@
     background-color: #826550;
     border-top: 1px solid #71543f;
     border-bottom: 1px solid #71543f;
-    &:active{
+    &:active {
       opacity: 0.4;
     }
-
   }
 }
 .main-nav--opened .user-list {
@@ -124,10 +123,9 @@
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
-    &:active{
+    &:active {
       opacity: 0.4;
     }
-
   }
 }
 .main-nav--opened .user-list__icon {
@@ -174,15 +172,15 @@
 .main-nav--nojs .main-nav__toggle {
   display: none;
 }
- .main-nav--nojs .site-list__item , .main-nav--nojs .user-list__item{
+.main-nav--nojs .site-list__item,
+.main-nav--nojs .user-list__item {
   display: block;
   margin-left: 10px;
-  a{
+  a {
     text-align: left;
-
   }
 }
-.main-nav--nojs .user-list__icon{
-display: none;
+.main-nav--nojs .user-list__icon {
+  display: none;
 }
 
