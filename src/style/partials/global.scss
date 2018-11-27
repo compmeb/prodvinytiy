@@ -5,7 +5,7 @@ body {
 
   font-size: 18px;
   line-height: 27px;
-  font-family: 'PT Sans Narrow' ,"Arial", sans-serif;
+  font-family: "PT Sans Narrow" ,"Arial", sans-serif;
   color: #f7f4f1;
   font-style: normal;
 
@@ -17,16 +17,24 @@ body {
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+  overflow: hidden;
 
   white-space: nowrap;
 
-  clip-path: inset(100%);
+  border: 0;
+
   clip: rect(0 0 0 0);
-  overflow: hidden;
+  clip-path: inset(100%);
 }
 img {
   width: 100%;
   height: auto;
 }
+.clearfix:after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+

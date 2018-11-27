@@ -1,3 +1,4 @@
+//section stats
 .stats {
   min-width: 320px;
   margin: 0 auto;
@@ -86,7 +87,9 @@
   line-height: 18px;
   text-align: right;
 }
+// end section stats
 
+// section advantages
 .slider {
   padding-bottom: 1px;
 
@@ -95,7 +98,7 @@
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
-} 
+}
 .advantages__list {
   margin: 0;
   padding: 0;
@@ -109,6 +112,7 @@
 
 .advantages__item {
   padding-top: 172px;
+
   background-repeat: no-repeat;
   background-position: center 35px;
   background-size: 95px 95px;
@@ -146,3 +150,136 @@
   margin-bottom: 45px;
   padding: 0;
 }
+//end section advantages
+
+//section news
+
+.news_wrapper {
+  padding-top: 37px;
+  padding-right: 20px;
+  padding-bottom: 47px;
+  padding-left: 20px;
+
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #f8f5f2;
+  border-bottom: 1px solid rgba(0, 0, 0,0.1);
+}
+.news__title {
+  margin: 0 auto;
+
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+}
+.news__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  font-size: 14px;
+  line-height: 23px;
+  text-transform: none;
+}
+.news__item {
+  position: relative;
+
+  padding-bottom: 10px;
+  padding-left: 70px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.news__date {
+  position: absolute;
+  top: 20px;
+  left: 0;
+
+  font-size: 16px;
+  line-height: 10px;
+  // color: #ffffff;
+  text-align: center;
+}
+.news__day {
+  font-size: 30px;
+  line-height: 30px;
+  // color: #ffffff;
+}
+.date-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.news__to-all {
+  display: block;
+  margin: 0 auto;
+
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: none;
+}
+.button {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+// end section news
+
+//section reviews
+.reviews__wrapper {
+  padding-top: 30px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+
+  color: #000000;
+
+  background-color: #f8f5f2;
+  &.slider {
+    background-image: url("../img/angle_div_black.svg");
+  }
+}
+.reviews__write {
+  display: none;
+}
+.reviews__title {
+  margin: 0 auto;
+  margin-bottom: 35px;
+
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.reviews__item {
+  margin: 0;
+  padding: 0;
+}
+.reviews__author-picture {
+  float: left;
+  margin: 0;
+  margin-right: 20px;
+}
+.reviews__author-image {
+  margin-top: 10px;
+}
+.reviews__author-name {
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 27px;
+  font-style: normal;
+}
+.reviews__text {
+  padding-left: 70px;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+}
+// end section reviews
